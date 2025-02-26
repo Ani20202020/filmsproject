@@ -1,0 +1,244 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "question": "Who directed the 1999 movie 'The Matrix'?",
+        "options": [
+          "Lana Wachowski",
+          "Christopher Nolan",
+          "James Cameron",
+          "Steven Spielberg"
+        ],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "id": 2,
+        "question": "Which actor starred as 'Iron Man' in the Marvel Cinematic Universe?",
+        "options": [
+          "Chris Hemsworth",
+          "Robert Downey Jr.",
+          "Mark Ruffalo",
+          "Chris Evans"
+        ],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "id": 3,
+        "question": "In which film does the character 'Forrest Gump' say the famous line 'Life is like a box of chocolates'?",
+        "options": [
+          "The Shawshank Redemption",
+          "Forrest Gump",
+          "Titanic",
+          "The Godfather"
+        ],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "id": 4,
+        "question": "Which animated movie features a fish named 'Nemo'?",
+        "options": [
+          "The Lion King",
+          "Finding Nemo",
+          "Shrek",
+          "Toy Story"
+        ],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "id": 5,
+        "question": "Who played the character 'The Joker' in 'The Dark Knight' (2008)?",
+        "options": [
+          "Heath Ledger",
+          "Jack Nicholson",
+          "Jared Leto",
+          "Joaquin Phoenix"
+        ],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "id": 6,
+        "question": "Which movie won the Academy Award for Best Picture in 1994?",
+        "options": [
+          "Forrest Gump",
+          "The Shawshank Redemption",
+          "Pulp Fiction",
+          "The Godfather"
+        ],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "id": 7,
+        "question": "Which movie features the song 'My Heart Will Go On' by Celine Dion?",
+        "options": [
+          "Titanic",
+          "The Bodyguard",
+          "Dirty Dancing",
+          "The Greatest Showman"
+        ],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "id": 8,
+        "question": "Which movie did Quentin Tarantino direct in 2012?",
+        "options": [
+          "Pulp Fiction",
+          "Inglourious Basterds",
+          "Django Unchained",
+          "The Hateful Eight"
+        ],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "id": 9,
+        "question": "Who starred as the lead character in the movie 'The Revenant' (2015)?",
+        "options": [
+          "Brad Pitt",
+          "Matthew McConaughey",
+          "Leonardo DiCaprio",
+          "Tom Hardy"
+        ],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "id": 10,
+        "question": "What is the name of the fictional country in the movie 'Black Panther'?",
+        "options": [
+          "Wakanda",
+          "Elbonia",
+          "Zamunda",
+          "Genovia"
+        ],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "id": 11,
+        "question": "Which movie features a famous scene with a flying bike and the phrase 'E.T. phone home'?",
+        "options": [
+          "The Goonies",
+          "E.T. the Extra-Terrestrial",
+          "Star Wars: A New Hope",
+          "Back to the Future"
+        ],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "id": 12,
+        "question": "Which movie features the line 'I see dead people'?",
+        "options": [
+          "The Sixth Sense",
+          "The Sixth Day",
+          "The Others",
+          "The Ring"
+        ],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "id": 13,
+        "question": "Who directed the movie 'Inception' (2010)?",
+        "options": [
+          "Christopher Nolan",
+          "Martin Scorsese",
+          "Ridley Scott",
+          "James Cameron"
+        ],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "id": 14,
+        "question": "Which film is known for the famous quote 'Here's looking at you, kid'?",
+        "options": [
+          "Casablanca",
+          "Gone with the Wind",
+          "Citizen Kane",
+          "The Godfather"
+        ],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "id": 15,
+        "question": "What year was 'The Godfather' released?",
+        "options": [
+          "1971",
+          "1972",
+          "1973",
+          "1974"
+        ],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "id": 16,
+        "question": "Which film franchise features the character 'Luke Skywalker'?",
+        "options": [
+          "Star Trek",
+          "Star Wars",
+          "Guardians of the Galaxy",
+          "Indiana Jones"
+        ],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "id": 17,
+        "question": "In which film does the character 'James Bond' first appear?",
+        "options": [
+          "Dr. No",
+          "Goldfinger",
+          "Thunderball",
+          "Casino Royale"
+        ],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "id": 18,
+        "question": "What is the name of the island in the movie 'Jurassic Park'?",
+        "options": [
+          "Isla Nublar",
+          "Isla Isla",
+          "Isla Sorna",
+          "Isla De Los Muertos"
+        ],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "id": 19,
+        "question": "Which 2001 movie was directed by Ridley Scott and starred Russell Crowe?",
+        "options": [
+          "Gladiator",
+          "A Beautiful Mind",
+          "Kingdom of Heaven",
+          "Robin Hood"
+        ],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "id": 20,
+        "question": "In the movie 'The Matrix', what color is the pill that Neo takes to escape the Matrix?",
+        "options": [
+          "Red",
+          "Blue",
+          "Green",
+          "Yellow"
+        ],
+        "correctOption": 0,
+        "points": 10
+      }
+    ]
+  }

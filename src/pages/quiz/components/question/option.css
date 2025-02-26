@@ -1,0 +1,86 @@
+ :root {
+  --color-darkest: #ebeff2;
+  --color-dark: #dddddd;
+  --color-medium: #ced4da;
+  --color-light: #494949;
+  --color-theme: #1098ad;
+  --color-accent: #ffa94d;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; 
+  margin-bottom: 3.5rem; 
+}
+ .question-box {
+  margin-top: 50px;
+  display: block;
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.1rem; 
+  font-weight: bold; 
+  text-align: center;
+  border: 2px solid var(--color-dark);
+  background-color: var(--color-dark);
+  padding: 1rem 2.2rem;  
+  border-radius: 50px;  
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+} 
+
+.question-box:not([disabled]):hover {
+  background-color: var(--color-darkest);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Սև ստվեր հովերի ժամանակ */
+  transform: translateY(-4px); /* Թեթև վեր բարձրացում հովերի ժամանակ */
+}
+
+.question-box:focus {
+  outline: none; /* Որպեսզի հանկարծակի ուղղահայաց գծերը չլինեն */
+  border-color: var(--color-theme); /* Կոճակի շրջանակը փոփոխել ընտրվելու ժամանակ */
+}
+
+.option-btn {
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.1rem; /* Ավելի մեծ տառաչափ */
+  font-weight: 500;
+  background-color: var(--color-medium);
+  border: 2px solid var(--color-medium);
+  border-radius: 8px; /* Սահմանված կլոր անկյուններ */
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Լուսային ստվեր */
+}
+
+.option-btn:hover {
+  background-color: var(--color-light);
+  border-color: var(--color-light);
+  transform: translateX(1.2rem); /* Էֆեկտի էֆեկտը */
+}
+
+.option-btn.correct {
+  background-color: var(--color-theme);
+  border: 2px solid var(--color-theme);
+  color: var(--color-light);
+  box-shadow: 0 4px 8px rgba(16, 152, 173, 0.3); /* Կանաչ մթնոլորտ ստեղծելու համար */
+}
+
+.option-btn.wrong {
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  color: var(--color-darkest);
+  box-shadow: 0 4px 8px rgba(255, 169, 77, 0.3); /* Կարմիր մթնոլորտ */
+}
+
+.option-btn[disabled] {
+  background-color: var(--color-medium);
+  border-color: var(--color-medium);
+  color: var(--color-light);
+  cursor: not-allowed;
+}
+
+.option-btn[disabled]:hover {
+  transform: none;
+} 

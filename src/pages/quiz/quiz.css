@@ -1,0 +1,34 @@
+/* :root {
+  --color-darkest: #ebeff2;
+  --color-dark: #dddddd;
+  --color-medium: #ced4da;
+  --color-light: #494949;
+  --color-theme: #1098ad;
+  --color-accent: #ffa94d;
+} */
+
+.quiz-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Վերահսկում է այն, որ քոնտեյները համալրի ողջ էկրանը */
+  padding: 20px; /* Հավելյալ տարածություն՝ ավելի լավ տեսք */
+}
+
+.main {
+  width: 100%; /* Համակարգման համար ամբողջ լայնություն */
+  max-width: 50rem; /* Բարձրագույն լայնություն */
+  margin: 0 auto; /* Կենտրոնացնում է ամբողջ բովանդակությունը հորիզոնական */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Կենտրոնացնում է բովանդակությունը ուղղահայաց */
+  justify-content: flex-start; /* Կոնտենտը սկսել է վերևից */
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 90%; /* Փոքր էկրանների համար չափերը հարմարեցված */
+    max-width: none; /* Վերացնում ենք վերին սահմանափակումները փոքր էկրանի համար */
+  }
+}

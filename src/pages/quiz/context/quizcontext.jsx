@@ -18,19 +18,33 @@ const quizReducer = (state, action) => {
     case "START":
       return { ...state, status: "active", index: 0, answer: null, points: 0 };
     case "ANSWER_SELECTED":
-      const correct = action.payload === state.questions[state.index].correctOption;
-      const updatedPoints = correct ? state.points + 10 : state.points;
-      return { ...state, answer: action.payload, points: updatedPoints };  // Ավելացնում է միավորները, եթե ճիշտ է պատասխանը
+      const isCorrect = action.payload === state.questions[state.index].correctOption;
+      return { 
+        ...state, 
+        answer: action.payload, 
+        points: isCorrect ? state.points + 1 : state.points 
+      };
     case "NEXT_QUESTION":
-      return { ...state, index: state.index + 1, answer: null };
+      if (state.index + 1 < state.questions.length) {
+        return { 
+          ...state, 
+          index: state.index + 1, 
+          answer: null 
+        };
+      } else {
+        return { ...state, status: "finished" }; // Ֆինիշի դրոշմ
+      }
     case "FINISH":
-      return { ...state, status: "finished" }; // Ֆինիշի ժամանակ ոչինչ չի փոխվում, պարզապես ավելացնում ենք finish
+      return { ...state, status: "finished" };
     case "RESTART":
       return { ...state, status: "ready", index: 0, answer: null, points: 0 };
     default:
       return state;
   }
 };
+
+
+
 
 
   

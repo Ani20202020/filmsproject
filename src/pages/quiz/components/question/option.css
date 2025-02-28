@@ -1,17 +1,11 @@
- :root {
-  --color-darkest: #ebeff2;
-  --color-dark: #dddddd;
-  --color-medium: #ced4da;
-  --color-light: #494949;
-  --color-theme: #1098ad;
-  --color-accent: #ffa94d;
-}
+
 
 .options {
   display: flex;
   flex-direction: column;
   gap: 1.5rem; 
-  margin-bottom: 3.5rem; 
+  margin-bottom: 3rem; 
+  /* z-index: 11; */
 }
  .question-box {
   margin-top: 50px;
@@ -25,13 +19,14 @@
   background-color: var(--color-dark);
   padding: 1rem 2.2rem;  
   border-radius: 50px;  
+  color: black;
   transition: 0.3s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 } 
 
 .question-box:not([disabled]):hover {
   background-color: var(--color-darkest);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Սև ստվեր հովերի ժամանակ */
+  box-shadow: 0 4px 12px rgba(203, 17, 17, 0.15); /* Սև ստվեր հովերի ժամանակ */
   transform: translateY(-4px); /* Թեթև վեր բարձրացում հովերի ժամանակ */
 }
 
@@ -61,26 +56,44 @@
 }
 
 .option-btn.correct {
-  background-color: var(--color-theme);
-  border: 2px solid var(--color-theme);
-  color: var(--color-light);
-  box-shadow: 0 4px 8px rgba(16, 152, 173, 0.3); /* Կանաչ մթնոլորտ ստեղծելու համար */
+  background: green;
+  color: white;
+  border-color: green;
 }
 
 .option-btn.wrong {
-  background-color: var(--color-accent);
-  border: 2px solid var(--color-accent);
-  color: var(--color-darkest);
-  box-shadow: 0 4px 8px rgba(255, 169, 77, 0.3); /* Կարմիր մթնոլորտ */
+  background: red;
+  color: white;
+  border-color: red;
 }
 
 .option-btn[disabled] {
-  background-color: var(--color-medium);
-  border-color: var(--color-medium);
-  color: var(--color-light);
   cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .option-btn[disabled]:hover {
   transform: none;
 } 
+
+
+
+.next-btn {
+  background-color: #4caf50; /* Կանաչ գույն */
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.next-btn:hover {
+  background-color: #45a049; /* Թեթև մուգ կանաչ */
+}
+
+.next-btn:disabled {
+  background-color: #ccc; /* Մոխրագույն՝ անջատված */
+  cursor: not-allowed;
+}

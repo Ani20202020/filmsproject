@@ -7,12 +7,12 @@
     backdrop-filter: blur(5px);
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
-
+margin-top: 2rem;
   }
   
   .movie-card {
     width: 220px;
-    background: #f4f2f2;
+    background: #130e0e;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(17, 1, 1, 0.1);
     overflow: hidden;

@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./pagination.css";
 export const Pagination = ({ totalPages, currentPage, onPageChange }) => {
   const startPage = Math.max(1, currentPage - 2);
   const endPage = Math.min(totalPages, currentPage + 2);

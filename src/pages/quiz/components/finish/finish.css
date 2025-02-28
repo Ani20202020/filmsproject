@@ -1,0 +1,50 @@
+.finish-screen {
+    text-align: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .finish-screen h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .finish-screen p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .restart-btn {
+    background: #ffcc00;
+    color: #222;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .restart-btn:hover {
+    background: #ffdd33;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

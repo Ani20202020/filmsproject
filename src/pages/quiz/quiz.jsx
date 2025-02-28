@@ -8,7 +8,7 @@ import { Questions } from "./components/question/question";
 import { Progress } from "./components/progres/progress";
 import { Footer } from "./components/footer/footer";
 import "./quiz.css";
-
+import { FinishScreen } from "./components/finish/finish";
 const QuizApp = () => {
   const { status, dispatch } = useContext(QuizContext);
 
@@ -28,6 +28,8 @@ const QuizApp = () => {
         {status === "loading" && <Loading />}
         {status === "error" && <Error />}
         {status === "ready" && <StartScreen />}
+        {status === "finished" && <FinishScreen />} 
+
         {status === "active" && (
           <>
             <Progress />

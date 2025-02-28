@@ -1,0 +1,61 @@
+/* ✅ Ֆոն՝ մուգ գույներով */
+.search-movies-container {
+    background: linear-gradient(to right, #121212, #1c1c1c);
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* ✅ ԹԱԲԼԻՑ (Table) */
+  .table-container {
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .table-row {
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .table-row:hover {
+    background: #444;
+  }
+  
+  /* ✅ MODAL */
+  .modal-container {
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-title {
+    color: #ffcc00;
+    font-size: 22px;
+  }
+  
+  /* ✅ ՊԵԳԻՆԵՅՇՆ (Pagination) */
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .pagination-button:hover {
+    background: #ffcc00;
+    color: black;
+  }
+  

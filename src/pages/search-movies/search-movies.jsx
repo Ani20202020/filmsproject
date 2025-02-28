@@ -9,6 +9,9 @@ import { getAppTitleByMovie } from "../../utils/helpers";
 import { Pagination } from "../../components/pagination/pagination"; // Եթե ունեք պեգինեյշն կոմպոնենտը
 
 
+
+import "./searchMovies.css"; 
+
 const initialState = {
   data: [],
   open: false,
@@ -36,8 +39,6 @@ export const SearchMovies = () => {
   const { searchQuery } = useContext(MoviesContext);
   const [state, dispatch] = useReducer(searchMovieReducer, initialState);
   const timeoutIdRef = useRef(null);
-
-  // Նոր state-ներ՝ pagination-ի համար
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
 
@@ -46,7 +47,7 @@ export const SearchMovies = () => {
     const response = await omdbApi.fetchMoviesBySearch(query, page);
     if (response.success) {
       dispatch({ type: "SET_DATA", payload: response.data.Search || [] });
-      setTotalPages(Math.ceil(response.data.totalResults / 10)); // OMDB-ն 10 հատով է տալիս
+      setTotalPages(Math.ceil(response.data.totalResults / 10));
     }
   };
 
@@ -57,7 +58,7 @@ export const SearchMovies = () => {
   useEffect(() => {
     clearTimeout(timeoutIdRef.current);
     timeoutIdRef.current = setTimeout(() => {
-      setCurrentPage(1); // Որոնման ժամանակ նորից սկսենք 1-ից
+      setCurrentPage(1);
       fetchMovies(1);
     }, 1000);
     return () => clearTimeout(timeoutIdRef.current);
@@ -80,7 +81,7 @@ export const SearchMovies = () => {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="search-movies-container">
       <Table data={state.data} onRowClick={handleRowClick} />
       <Pagination totalPages={totalPages} currentPage={currentPage} onPageChange={setCurrentPage} />
       <Modal

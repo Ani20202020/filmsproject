@@ -10,7 +10,7 @@
           "Steven Spielberg"
         ],
         "correctOption": 0,
-        "points": 10
+        "points": 1
       },
       {
         "id": 2,
@@ -34,7 +34,7 @@
           "The Godfather"
         ],
         "correctOption": 1,
-        "points": 10
+        "points": 1
       },
       {
         "id": 4,
@@ -46,7 +46,7 @@
           "Toy Story"
         ],
         "correctOption": 1,
-        "points": 10
+        "points": 1
       },
       {
         "id": 5,
@@ -58,7 +58,7 @@
           "Joaquin Phoenix"
         ],
         "correctOption": 0,
-        "points": 10
+        "points": 1
       },
       {
         "id": 6,
@@ -70,7 +70,7 @@
           "The Godfather"
         ],
         "correctOption": 0,
-        "points": 10
+        "points": 1
       },
       {
         "id": 7,
@@ -82,7 +82,7 @@
           "The Greatest Showman"
         ],
         "correctOption": 0,
-        "points": 10
+        "points": 1
       },
       {
         "id": 8,
@@ -94,8 +94,8 @@
           "The Hateful Eight"
         ],
         "correctOption": 2,
-        "points": 10
-      },
+        "points": 1
+       },
       {
         "id": 9,
         "question": "Who starred as the lead character in the movie 'The Revenant' (2015)?",
@@ -106,7 +106,7 @@
           "Tom Hardy"
         ],
         "correctOption": 2,
-        "points": 10
+        "points": 1
       },
       {
         "id": 10,
@@ -118,7 +118,7 @@
           "Genovia"
         ],
         "correctOption": 0,
-        "points": 10
+        "points": 1
       },
       {
         "id": 11,
@@ -130,7 +130,7 @@
           "Back to the Future"
         ],
         "correctOption": 1,
-        "points": 10
+        "points": 1
       },
       {
         "id": 12,
@@ -142,7 +142,7 @@
           "The Ring"
         ],
         "correctOption": 0,
-        "points": 10
+        "points": 1
       },
       {
         "id": 13,
@@ -154,7 +154,7 @@
           "James Cameron"
         ],
         "correctOption": 0,
-        "points": 10
+        "points": 1
       },
       {
         "id": 14,
@@ -178,7 +178,7 @@
           "1974"
         ],
         "correctOption": 1,
-        "points": 10
+        "points": 1
       },
       {
         "id": 16,
@@ -190,7 +190,7 @@
           "Indiana Jones"
         ],
         "correctOption": 1,
-        "points": 10
+        "points": 1
       },
       {
         "id": 17,
@@ -202,7 +202,7 @@
           "Casino Royale"
         ],
         "correctOption": 0,
-        "points": 10
+        "points": 1
       },
       {
         "id": 18,
@@ -214,7 +214,7 @@
           "Isla De Los Muertos"
         ],
         "correctOption": 0,
-        "points": 10
+        "points": 1
       },
       {
         "id": 19,
@@ -226,7 +226,7 @@
           "Robin Hood"
         ],
         "correctOption": 0,
-        "points": 10
+        "points": 1
       },
       {
         "id": 20,
@@ -238,7 +238,7 @@
           "Yellow"
         ],
         "correctOption": 0,
-        "points": 10
+        "points": 1
       }
     ]
   }

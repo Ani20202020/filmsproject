@@ -6,29 +6,34 @@
     font-size: 1.4rem;
     font-weight: bold;
     width: 100%;
+    
     padding: 10px 15px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    background: #e7d341; /* Փոխիր 0.2 -> 0.5 */
+        border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(210, 13, 13, 0.1);
+  margin-top: 30rem;
   }
   
   .q-progress progress {
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
-    height: 12px;
+    height: 16px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: var(--color-light, #e0e0e0);
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+      background-color: #ddd; /* Ավելի մուգ ֆոն */
+      border: 1px solid rgba(0, 0, 0, 0.2); /* Թեթև եզրագիծ */
+    box-shadow: inset 0 2px 4px rgba(244, 36, 36, 0.2);
     transition: width 0.4s ease-in-out;
   }
   
   /* Chrome, Safari */
-  .q-progress progress::-webkit-progress-bar {
-    background-color: var(--color-light, #e0e0e0);
-    border-radius: 10px;
+  .q-progress progress::-webkit-progress-value {
+    background: linear-gradient(90deg, #ff5e00, #d6005e);
+    box-shadow: 0 3px 10px rgba(255, 94, 0, 0.6); /* Ավելի ուժեղ շողք */
   }
+
+  
   
   .q-progress progress::-webkit-progress-value {
     background: linear-gradient(90deg, #ff8a00, #e52e71);
@@ -39,9 +44,11 @@
   
   /* Firefox */
   .q-progress progress::-moz-progress-bar {
-    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    background: linear-gradient(90deg, #ff5e00, #d6005e);
     border-radius: 10px;
     transition: width 0.4s ease-in-out;
+    box-shadow: 0 3px 10px rgba(255, 94, 0, 0.6);
+
   }
   
   /* Թիվերի ձևավորում */
@@ -50,4 +57,4 @@
     color: var(--color-text, #333);
     font-size: 1.2rem;
   }
-  
+      

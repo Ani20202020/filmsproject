@@ -7,69 +7,71 @@ import { MoviesProvider, tab, MoviesContext } from "./context/moves-context.js";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "./App.css";
+
+
+
+
+
 
 const Tabs = () => {
   const { setActiveTab, activeTab } = useContext(MoviesContext);
 
-  const getTabClasses = (tab) => {
-    return `nav-link ${activeTab === tab ? "active" : ""}`;
-  };
-
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item ">
-        <button
-          onClick={() => setActiveTab(tab.search)}
-          className={getTabClasses(tab.search)}
-        >
-          Search Movies
-        </button>
-      </li>
-      <li className="nav-item">
-        <button
-          onClick={() => setActiveTab(tab.movies)}
-          className={getTabClasses(tab.movies)}
-        >
-          My Movie List
-        </button>
-      </li>
-      <li className="nav-item">
-        <button
-          onClick={() => setActiveTab(tab.quiz)}
-          className={getTabClasses(tab.quiz)}
-        >
-          Quiz
-        </button>
-      </li>
-    </ul>
+    <div className="tabs-container d-flex justify-content-center mt-5">
+      <ul className="nav nav-tabs custom-tabs">
+        <li className="nav-item">
+          <button
+            onClick={() => setActiveTab(tab.search)}
+            className={`nav-link custom-tab-button ${activeTab === tab.search ? "active" : ""}`}
+          >
+            🔍 Search Movies
+          </button>
+        </li>
+        <li className="nav-item">
+          <button
+            onClick={() => setActiveTab(tab.movies)}
+            className={`nav-link custom-tab-button ${activeTab === tab.movies ? "active" : ""}`}
+          >
+            🎬 My Movie List
+          </button>
+        </li>
+        <li className="nav-item">
+          <button
+            onClick={() => setActiveTab(tab.quiz)}
+            className={`nav-link custom-tab-button ${activeTab === tab.quiz ? "active" : ""}`}
+          >
+            ❓ Quiz
+          </button>
+        </li>
+      </ul>
+    </div>
   );
 };
 
 const Layout = () => {
   const { activeTab } = useContext(MoviesContext);
 
-  console.log("activeTab", activeTab);
-
   return (
-    <>
+    <div className="content-container text-center mt-5">
       {activeTab === tab.search && <SearchMovies />}
       {activeTab === tab.movies && <Movies />}
       {activeTab === tab.quiz && <Quiz />}
-    </>
+    </div>
   );
 };
 
 function App() {
   return (
     <MoviesProvider>
-      <div>
+      <div className="app-container text-center">
         <Header />
         <Tabs />
         <Layout />
-        <main className="container mt-4"></main>
       </div>
     </MoviesProvider>
   );
 }
 
 export default App;
+

@@ -1,19 +1,22 @@
-/* :root {
-  --color-darkest: #ebeff2;
-  --color-dark: #dddddd;
-  --color-medium: #ced4da;
-  --color-light: #494949;
-  --color-theme: #1098ad;
-  --color-accent: #ffa94d;
-} */
+:root {
+  --color-darkest: #ffffff; /* Սպիտակ ֆոն */
+  --color-dark: #f5f5f5; /* Բաց մոխրագույն */
+  --color-medium: #dcdcdc; /* Ավելի մեղմ մոխրագույն */
+  --color-light: #222; /* Մուգ տեքստ, բայց ոչ սև */
+  --color-theme: #0dc9e6; /* Մնում է նույնը */
+  --color-accent: #ff6f00; /* Ավելի վառ նարնջագույն */
+}
 
+
+ 
 .quiz-game {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh; /* Վերահսկում է այն, որ քոնտեյները համալրի ողջ էկրանը */
-  padding: 20px; /* Հավելյալ տարածություն՝ ավելի լավ տեսք */
+  padding-bottom: 10rem; /* Հավելյալ տարածություն՝ ավելի լավ տեսք */
+
 }
 
 .main {
@@ -24,6 +27,8 @@
   flex-direction: column;
   align-items: center; /* Կենտրոնացնում է բովանդակությունը ուղղահայաց */
   justify-content: flex-start; /* Կոնտենտը սկսել է վերևից */
+z-index: 1000;
+margin-bottom: 25rem;
 }
 
 @media (max-width: 768px) {

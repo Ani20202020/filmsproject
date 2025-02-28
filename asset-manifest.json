@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/reactfilmsproject/static/css/main.9baf5321.css",
-    "main.js": "/reactfilmsproject/static/js/main.1a00816c.js",
-    "static/media/bootstrap-icons.woff?": "/reactfilmsproject/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/reactfilmsproject/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "static/media/imdb.svg": "/reactfilmsproject/static/media/imdb.55e9a457321720f4833e51b2b88c641d.svg",
-    "index.html": "/reactfilmsproject/index.html",
-    "main.9baf5321.css.map": "/reactfilmsproject/static/css/main.9baf5321.css.map",
-    "main.1a00816c.js.map": "/reactfilmsproject/static/js/main.1a00816c.js.map"
+    "main.css": "/filmsproject/static/css/main.da056667.css",
+    "main.js": "/filmsproject/static/js/main.deac9923.js",
+    "static/media/1966480.jpg": "/filmsproject/static/media/1966480.7107cc993f67261d7f40.jpg",
+    "static/media/bootstrap-icons.woff?": "/filmsproject/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/filmsproject/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/imdb.svg": "/filmsproject/static/media/imdb.55e9a457321720f4833e51b2b88c641d.svg",
+    "index.html": "/filmsproject/index.html",
+    "main.da056667.css.map": "/filmsproject/static/css/main.da056667.css.map",
+    "main.deac9923.js.map": "/filmsproject/static/js/main.deac9923.js.map"
   },
   "entrypoints": [
-    "static/css/main.9baf5321.css",
-    "static/js/main.1a00816c.js"
+    "static/css/main.da056667.css",
+    "static/js/main.deac9923.js"
   ]
 }

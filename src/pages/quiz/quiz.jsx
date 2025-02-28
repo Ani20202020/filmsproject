@@ -13,7 +13,7 @@ const QuizApp = () => {
   const { status, dispatch } = useContext(QuizContext);
 
   useEffect(() => {
-    fetch("/questions.json")
+    fetch("http://localhost:5001/questions")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to load questions");

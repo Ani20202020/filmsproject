@@ -13,14 +13,21 @@ const QuizApp = () => {
   const { status, dispatch } = useContext(QuizContext);
 
   useEffect(() => {
-    quizApi.getQuestions().then((response) => {
-      if (response.success) {
-        dispatch({ type: "DATA_RECEIVED", payload: response.data });
-      } else {
+    fetch("/questions.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to load questions");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        dispatch({ type: "DATA_RECEIVED", payload: data });
+      })
+      .catch(() => {
         dispatch({ type: "DATA_FAILED" });
-      }
-    });
+      });
   }, []);
+  
 
   return (
     <div className="quiz-game mt-4">

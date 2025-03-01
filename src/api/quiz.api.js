@@ -1,8 +1,9 @@
 class QuizApi {
     constructor() {
-      this.baseUrl = "http://localhost:3001";
+      this.baseUrl = "http://localhost:5001";
     }
   
+
     async getQuestions() {
       try {
         const response = await fetch(`${this.baseUrl}/questions`);

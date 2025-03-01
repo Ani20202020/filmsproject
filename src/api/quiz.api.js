@@ -1,6 +1,6 @@
 class QuizApi {
     constructor() {
-      this.baseUrl = "http://localhost:5001";
+      this.baseUrl = "http://localhost:3001";
     }
   
     async getQuestions() {

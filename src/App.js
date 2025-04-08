@@ -8,8 +8,9 @@ import { MoviesProvider, tab, MoviesContext } from "./context/moves-context.js";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./App.css";
+import Footer from "./components/footer/footer.jsx"
 
-
+import AiBot from './components/ai-bot/ai-bot.jsx';
 
 
 
@@ -44,6 +45,16 @@ const Tabs = () => {
             ❓ Quiz
           </button>
         </li>
+       
+        <li className="nav-item">
+  <button
+    onClick={() => setActiveTab(tab.aiBot)}
+    className={`nav-link custom-tab-button ${activeTab === tab.aiBot ? "active" : ""}`}
+  >
+    🤖 AI Bot
+  </button>
+</li>
+
       </ul>
     </div>
   );
@@ -57,9 +68,12 @@ const Layout = () => {
       {activeTab === tab.search && <SearchMovies />}
       {activeTab === tab.movies && <Movies />}
       {activeTab === tab.quiz && <Quiz />}
+      {activeTab === tab.aiBot && <AiBot />}
+
     </div>
   );
 };
+
 
 function App() {
   return (
@@ -68,6 +82,7 @@ function App() {
         <Header />
         <Tabs />
         <Layout />
+        <Footer />
       </div>
     </MoviesProvider>
   );

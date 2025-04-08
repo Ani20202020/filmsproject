@@ -6,6 +6,7 @@ export const tab = {
   search: "search",
   movies: "movies",
   quiz: "quiz",
+  aiBot: "aiBot", 
 };
 
 export const MoviesProvider = ({ children }) => {
